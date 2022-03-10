@@ -12,10 +12,12 @@ word_count_values = sorted(word_count_values, reverse = True) # sorted values
 
 n = len(word_count_values)
 word_count_sorted = {}
+#go through each value starting from the largest value and add the word that maps to that value to a new dictionary
 for i in range(n):
 	for key in word_count:
 		if word_count.get(key) == word_count_values[i]:
 			word_count_sorted[key] = word_count_values[i]
+print('\r')
 i = 0
 for key in word_count_sorted:
 	if i < 5:
