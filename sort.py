@@ -1,5 +1,4 @@
-def sort_list():
-	list_input = input()
+def sort_list(list_input):
 	list = list_input.split(", ")
 	n = len(list)
 	for i in range(n):
