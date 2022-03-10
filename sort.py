@@ -3,7 +3,10 @@ def sort_list():
 	list = list_input.split(", ")
 	n = len(list)
 	for i in range(n):
-		list[i] = int(list[i])
+		try:
+			list[i] = int(list[i])
+		except:
+			print("input is not of int type or is not formatted correctly")
 	i = 0
 	while i < n:
 		j = 0
@@ -15,3 +18,5 @@ def sort_list():
 			j = j + 1
 		i = i + 1
 	return list
+test = sort_list()
+
