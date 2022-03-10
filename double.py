@@ -1,5 +1,5 @@
 def doubler(func):
-	def wrapper:
+	def wrapper():
 		func()
 		func()
 	return wrapper
