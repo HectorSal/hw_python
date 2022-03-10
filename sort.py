@@ -17,5 +17,3 @@ def sort_list(list_input):
 			j = j + 1
 		i = i + 1
 	return list
-test = sort_list()
-
