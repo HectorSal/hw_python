@@ -4,8 +4,6 @@ def sort_list(list):
 		try:
 			list[i] = int(list[i])
 		except:
-			print("list contains input is not of int type")
-			return
 	i = 0
 	while i < n:
 		j = 0
