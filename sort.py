@@ -4,6 +4,7 @@ def sort_list(list):
 		try:
 			list[i] = int(list[i])
 		except:
+			pass
 	i = 0
 	while i < n:
 		j = 0
