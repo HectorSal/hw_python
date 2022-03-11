@@ -1,5 +1,7 @@
 def sort_list(list):
 	n = len(list)
+	if n = 0:
+		return list
 	object_type = type(list[0])
 	for i in range(n):
 		if object_type != type(list[i]):
