@@ -1,10 +1,10 @@
 def sort_list(list):
 	n = len(list)
+	type = type(list[0])
 	for i in range(n):
-		try:
-			list[i] = int(list[i])
-		except:
-			pass
+		if type != type(list[i]):
+			print("list contains different data types and cannot be sorted")
+			return
 	i = 0
 	while i < n:
 		j = 0
