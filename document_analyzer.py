@@ -1,6 +1,6 @@
 document = open('document.txt', 'r')
-test = document.read()
-list = test.split(" ")
+document_text = document.read()
+list = document_text.split(" ")
 list = sorted(list) # sorted the words
 n = len(list)
 word_count = {}
@@ -11,6 +11,7 @@ word_count_values = word_count.values()
 word_count_values = sorted(word_count_values, reverse = True) # sorted values
 
 n = len(word_count_values)
+# use a for loop to add the values to a dictionary. The dictionary will have no duplicates, so its keys can be put in a list.
 no_duplicate_values = {}
 for i in range(n):
 	no_duplicate_values[word_count_values[i]] = i
@@ -19,7 +20,7 @@ word_count_values_no_duplicates.extend(no_duplicate_values.keys())
 n = len(word_count_values_no_duplicates)
 
 word_count_sorted = {}
-#go through each value starting from the largest value and add the word that maps to that value to a new dictionary
+#go through each value starting from the largest value and add every word that maps to that value to a new dictionary
 for i in range(n):
 	for key in word_count:
 		if word_count.get(key) == word_count_values_no_duplicates[i]:
