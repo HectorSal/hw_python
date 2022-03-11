@@ -3,7 +3,7 @@ def sort_list(list):
 	if n == 0:
 		return list
 	data_type = type(list[0])
-	for i in range(n):
+	for i in range(1, n):
 		if data_type != type(list[i]):
 			print("list contains different data types and cannot be sorted")
 			return
