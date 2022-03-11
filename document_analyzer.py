@@ -10,15 +10,7 @@ for i in range(n):
 word_count_values = word_count.values()
 word_count_values = sorted(word_count_values, reverse = True) # sorted values
 
-n = len(word_count_values)
-no_duplicate_values = {}
-for i in range(n):
-	no_duplicate_values[word_count_values[i]] = i
-word_count_values_no_duplicates = []
-i = 0
-for key in no_duplicate_values:
-	word_count_values_no_duplicates[i] = key
-	i = i +1
+word_count_values_no_duplicates = list(dict.fromkeys(word_count_values))
 
 word_count_sorted = {}
 #go through each value starting from the largest value and add the word that maps to that value to a new dictionary
