@@ -10,8 +10,12 @@ for i in range(n):
 word_count_values = word_count.values()
 word_count_values = sorted(word_count_values, reverse = True) # sorted values
 
+n = len(word_count_values)
+no_duplicate_values = {}
+for i in range(n):
+	no_duplicate_values[word_count_values[i]] = i
 word_count_values_no_duplicates = []
-word_count_values_no_duplicates.extend(dict.fromkeys(word_count_values).keys())
+word_count_values_no_duplicates.extend(no_duplicate_values.keys())
 n = len(word_count_values_no_duplicates)
 
 word_count_sorted = {}
